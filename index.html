@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW Portfolio</title>
+
+    <style>
+        /* RESET */
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+        body{
+            background:#000;
+            color:white;
+            overflow-x:hidden;
+        }
+
+        /* NAVBAR */
+        nav{
+            width:100%;
+            padding:20px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:fixed;
+            top:0;
+            z-index:1000;
+            backdrop-filter:transition(10px);
+            border-bottom:1px solid rgba(255,255,255,0.1);
+        }
+
+        nav h2{
+            font-size:28px;
+            font-weight:700;
+            color:#00A3FF;
+        }
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:25px;
+        }
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-weight:500;
+            transition:0.3s;
+        }
+        nav ul li a:hover{
+            color:#00A3FF;
+        }
+
+        /* HERO */
+        .hero{
+            height:100vh;
+            padding:180px 60px 0;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            background:url('https://img.freepik.com/free-photo/view-3d-car_23-2150796980.jpg') no-repeat center/cover;
+        }
+        .hero-overlay{
+            position:absolute;
+            top:0;left:0;right:0;bottom:0;
+            background:rgba(0,0,0,0.4);
+        }
+        .hero-text{
+            position:relative;
+            max-width:600px;
+        }
+        .hero-text h1{
+            font-size:56px;
+            font-weight:700;
+            line-height:1.1;
+            text-shadow:0 0 20px black;
+        }
+        .hero-text p{
+            margin-top:20px;
+            font-size:20px;
+            max-width:450px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:30px;
+            padding:14px 28px;
+            background:#00A3FF;
+            color:white;
+            border-radius:8px;
+            text-decoration:none;
+            font-size:16px;
+            transition:0.3s;
+        }
+        .btn:hover{
+            background:#0077bb;
+        }
+
+        /* SECTION HEADER */
+        section h2{
+            font-size:40px;
+            margin-bottom:20px;
+            text-align:center;
+            color:#00A3FF;
+        }
+
+        /* PROJECTS */
+        .projects{
+            padding:80px 60px;
+            background:#0a0a0a;
+        }
+        .project-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:25px;
+            margin-top:40px;
+        }
+        .project-card{
+            background:#111;
+            padding:25px;
+            border-radius:12px;
+            border:1px solid #00A3FF;
+            transition:0.3s;
+        }
+        .project-card:hover{
+            transform:translateY(-5px);
+            box-shadow:0 0 15px #00A3FF;
+        }
+        .project-card h3{
+            font-size:22px;
+            margin-bottom:10px;
+            color:#00A3FF;
+        }
+        .project-card p{
+            color:#ccc;
+        }
+
+        /* CONTACT */
+        .contact{
+            padding:80px 60px;
+        }
+        .contact p{
+            font-size:20px;
+            margin-bottom:10px;
+        }
+        .contact a{
+            color:#00A3FF;
+            text-decoration:none;
+        }
+
+        /* FOOTER */
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#070707;
+            margin-top:40px;
+            color:#888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>BMW Deepak</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>  
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h1>Born to Drive Innovation</h1>
+            <p>BMW-themed developer creating luxury-level digital experiences, AI tools, and automotive branding.</p>
+            <a class="btn" href="#">Download CV</a>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <h2>BMW Projects</h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>BMW M-Series Landing Page</h3>
+                <p>Premium landing + animations built for the BMW car niche audience.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Luxury Car Reels / Branding</h3>
+                <p>Instagram branding templates created for car pages (BMW-focused).</p>
+            </div>
+
+            <div class="project-card">
+                <h3>AI Smart Grid Fault Detection</h3>
+                <p>AI dashboard to predict electric grid faults using ML models.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=db83071@gmail.com">db83071@gmail.com</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/deepak._.129/" target="_blank">@none._.129</a></p>
+        <p>LinkedIn: 
+  <a href="https://www.linkedin.com/in/Deepak B/" target="_blank">
+    DEEPAK_B
+  </a>
+</p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Deepak — Designed in BMW Style
+    </footer>
+
+</body>
+</html>
